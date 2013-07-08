@@ -5,7 +5,7 @@ app.get('/', function(request, response) {
   var buf = new Buffer (256); 
 
 var fs = require('fs');
-   response.send(buf.toString('utc 8',fs.readFileSync("index.html")));
+   response.send(buf.toString());
 //  response.send('Hello World2!');
  });
 var port = process.env.PORT || 5000;app.listen(port, function() {
